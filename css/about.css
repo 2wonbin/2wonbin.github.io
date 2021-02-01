@@ -1,0 +1,146 @@
+.about-background {
+	background-color: white;
+	height: 90vh;
+	display: flex;
+}
+
+.about-container {
+	width: 50%;
+	height: 80vh;
+	margin: auto;
+	margin-top: 30px;
+	margin-left: 50px;
+	background-color: white;
+}
+
+.about-social {
+	width: 50%;
+	height: 80vh;
+	margin-top: 30px;
+	background-color: white;
+	margin-right: 50px;
+}
+
+.about-name {
+	font-size: 30px;
+	margin: 20px;
+	text-align: center;
+}
+
+.about-portrait {
+	width: 250px;
+	height: 300px;
+	border-radius: 20%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.about-letter {
+	font-weight: 500;
+	font-size: 14px;
+	text-align: center;
+}
+
+.about-detail {
+	font-size: 30px;
+	margin: 20px;
+	text-align: center;
+}
+
+.about-title {
+	font-size: 15px;
+	text-align: center;
+}
+
+hr {
+	border: 1px solid cyan;
+}
+
+.about-content {
+	text-align: center;
+	margin-inline-start: 0px;
+	padding-left: 0;
+}
+
+.contact-title,
+.about-name,
+.about-detail {
+	font-size: 2.5rem;
+}
+.about-hobby dd,
+.about-mbti dd,
+.about-quote dd {
+	font-size: 30px;
+}
+
+.about-contact {
+	font-size: 20px;
+}
+
+.about-phone,
+.about-mail {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+.about-phone i {
+	font-size: 2.5em;
+	margin-right: 80px;
+}
+
+.about-mail i {
+	font-size: 2.2em;
+	margin-left: 30px;
+}
+
+.contact-content-right {
+	width: 60%;
+}
+
+.about-social-links {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+	padding-left: 0;
+}
+
+a.notion {
+	background-image: url(../images/notion_black.svg);
+	width: 48px;
+	height: 48px;
+	display: inline-block;
+	text-indent: -9999px;
+	transition-duration: 0.5s;
+}
+a.notion:hover {
+	background-image: url(../images/notion_white.svg);
+}
+a.instagram {
+	background-image: url(../images/instagram_black.svg);
+	width: 48px;
+	height: 48px;
+	display: inline-block;
+	text-indent: -9999px;
+	transition-duration: 0.5s;
+}
+a.instagram:hover {
+	background-image: url(../images/Instagram.svg);
+}
+a.github {
+	background-image: url(../images/github_black.svg);
+	width: 48px;
+	height: 48px;
+	display: inline-block;
+	text-indent: -9999px;
+	transition-duration: 0.5s;
+	background-size: contain;
+	background-position: center;
+}
+
+a.github:hover {
+	background-image: url(../images/github.svg);
+	color: rgb(118, 118, 235);
+	background-size: 105%;
+}

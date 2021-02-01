@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="../css/memberList.css" />
+		<script src="../js/jquery-3.5.1.js"></script>
+		<script src="../js/memberList.js"></script>
+		<title>회원목록조회 | leewonbin</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="topnav-start-div">
+					<div
+						class="topnav-content-div start"
+						onclick="location.href='../html/index.html'"
+					>
+						<span>HOME</span>
+					</div>
+				</div>
+				<div class="nav-link">
+					<div
+						class="topnav-content-div"
+						onclick="location.href='../html/about.html'"
+					>
+						<span>자기소개</span>
+					</div>
+					<div
+						class="topnav-content-div"
+						onclick="location.href='../html/travel.html'"
+					>
+						<span>여행</span>
+					</div>
+					<div
+						class="topnav-content-div"
+						onclick="location.href='../html/roadmap.html'"
+					>
+						<span>로드맵</span>
+					</div>
+					<div
+						class="topnav-content-div"
+						onclick="location.href='../html/signup.html'"
+					>
+						<span>회원가입</span>
+					</div>
+					<div
+						class="topnav-content-div"
+						onclick="location.href='../html/memberList.html'"
+					>
+						<span>회원목록</span>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<section>
+			<h1>회원목록관리</h1>
+			<div>
+				<input id="logout" type="button" value="로그아웃" />
+			</div>
+			<div class="memberList">
+				<table id="memberListTable">
+					<tr>
+						<th style="width: 10%">No</th>
+						<th style="width: 20%">이름</th>
+						<th style="width: 40%">이메일</th>
+						<th style="width: 30%">가입일</th>
+					</tr>
+				</table>
+			</div>
+		</section>
+	</body>
+</html>

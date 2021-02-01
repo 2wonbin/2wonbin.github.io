@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="../css/signUp.css" />
+		<script src="../js/jquery-3.5.1.js"></script>
+		<script src="../js/signup.js"></script>
+		<title>회원가입 | leewonbin</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="topnav-start-div">
+					<div
+						class="topnav-content-div start"
+						onclick="location.href='../html/index.html'"
+					>
+						<span>자기소개</span>
+					</div>
+				</div>
+				<div class="nav-link">
+					<div
+						class="topnav-content-div"
+						onclick="location.href='../html/about.html'"
+					>
+						<span>HOME</span>
+					</div>
+					<div
+						class="topnav-content-div"
+						onclick="location.href='../html/travel.html'"
+					>
+						<span>여행</span>
+					</div>
+					<div
+						class="topnav-content-div"
+						onclick="location.href='../html/roadmap.html'"
+					>
+						<span>로드맵</span>
+					</div>
+					<div
+						class="topnav-content-div"
+						onclick="location.href='../html/signup.html'"
+					>
+						<span>회원가입</span>
+					</div>
+					<div
+						class="topnav-content-div"
+						onclick="location.href='../html/memberList.html'"
+					>
+						<span>회원목록</span>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<section>
+			<form
+				action="javascript:onSubmitBtnClick()"
+				method="post"
+				class="register"
+			>
+				<table style="border: 1px solid black">
+					<tr>
+						<td><label for="userName">이름</label></td>
+						<td>
+							<input
+								type="text"
+								name="userName"
+								id="userName"
+								maxlength="6"
+								placeholder="2~6자 한글로 입력하세요"
+							/>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="userMail">이메일</label></td>
+						<td>
+							<input
+								type="email"
+								name="userMail"
+								id="userMail"
+								maxlength="25"
+								placeholder="'@'를 포함해야합니다."
+							/>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="userPassword">패스워드</label></td>
+						<td>
+							<input
+								type="password"
+								name="userPassword"
+								id="userPassword"
+								maxlength="10"
+								placeholder="4~10자 안에서 입력하세요"
+							/>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="passwordchk">패스워드 확인</label></td>
+						<td>
+							<input
+								type="password"
+								name="passwordchk"
+								id="passwordchk"
+								maxlength="10"
+								placeholder="같은 패스워드를 입력하세요"
+							/>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" style="text-align: center">
+							<input type="submit" id="submit" value="가입" class="button" />
+						</td>
+					</tr>
+				</table>
+			</form>
+		</section>
+	</body>
+</html>

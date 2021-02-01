@@ -1,0 +1,209 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.main {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 90vw;
+	margin-top: 30px;
+}
+.tabs {
+	display: flex;
+	justify-content: center;
+}
+.tabs .tab {
+	font-size: 1rem;
+	text-align: center;
+	line-height: 30px;
+	width: 150px;
+	height: 60px;
+	cursor: pointer;
+	background-color: rgb(243, 243, 243);
+	color: rgb(20, 19, 19);
+	position: relative;
+	margin-bottom: 5px;
+
+	/* border: 2px solid black; */
+}
+.tab:hover {
+	border-bottom: 3px solid cyan;
+	margin-bottom: 2px;
+}
+
+.tabs p {
+	font-size: 30px;
+}
+.content {
+	position: relative;
+	/* border: 2px solid black; */
+	width: 90vw;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+}
+.items {
+	width: 300px;
+	display: none;
+	padding: 10px;
+	background-color: #fff;
+	position: relative;
+}
+
+.items.active {
+	display: inline-block;
+}
+
+/* 갤러리 파트 */
+.image-gallery {
+	width: 90vw;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-gap: 1.5rem;
+}
+
+.image-gallery div {
+	width: 100%;
+	height: 25rem;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	background-color: black;
+	opacity: 0.8;
+	transition-duration: 0.5s;
+}
+.image-gallery div:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+#tab1 .image-gallery {
+	grid-template-areas:
+		"img-k1 img-k1 img-k2"
+		"img-k3 img-k4 img-k4"
+		"img-k5 img-k6 img-k7";
+}
+
+#tab2 .image-gallery {
+	grid-template-areas:
+		"img-j1 img-j1 img-j4"
+		"img-j2 img-j3 img-j3"
+		"img-j7 img-j6 img-j5";
+}
+
+.img-k1 {
+	grid-area: img-k1;
+	background-image: url("../images/travel/k1.jpg");
+}
+.img-k2 {
+	grid-area: img-k2;
+	background-image: url("../images/travel/k2.jpg");
+}
+.img-k3 {
+	grid-area: img-k3;
+	background-image: url("../images/travel/k3.jpg");
+}
+.img-k4 {
+	grid-area: img-k4;
+	background-image: url("../images/travel/k4.jpg");
+}
+.img-k5 {
+	grid-area: img-k5;
+	background-image: url("../images/travel/k5.jpg");
+}
+.img-k6 {
+	grid-area: img-k6;
+	background-image: url("../images/travel/k6.jpg");
+}
+.img-k7 {
+	grid-area: img-k7;
+	background-image: url("../images/travel/k7.jpg");
+}
+
+.img-j1 {
+	grid-area: img-j1;
+	background-image: url("../images/travel/j1.jpg");
+}
+.img-j2 {
+	grid-area: img-j2;
+	background-image: url("../images/travel/j2.jpg");
+}
+.img-j3 {
+	grid-area: img-j3;
+	background-image: url("../images/travel/j3.jpg");
+}
+.img-j4 {
+	grid-area: img-j4;
+	background-image: url("../images/travel/j4.jpg");
+}
+.img-j5 {
+	grid-area: img-j5;
+	background-image: url("../images/travel/j5.jpg");
+}
+.img-j6 {
+	grid-area: img-j6;
+	background-image: url("../images/travel/j6.jpg");
+}
+.img-j7 {
+	grid-area: img-j7;
+	background-image: url("../images/travel/j7.jpg");
+}
+.tab_content {
+	display: none;
+}
+
+.tab_content.active {
+	display: block;
+}
+
+.modal_background {
+	display: none;
+	background-color: rgba(0, 0, 0, 0.3);
+	top: 0;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+}
+.modal_div-pic {
+	position: absolute;
+	z-index: 99999;
+	width: 70%;
+	height: 90%;
+	top: 50%;
+	left: 50%;
+	background-color: white;
+	transform: translate(-50%, -50%);
+}
+
+.modal_div_picture {
+	width: 100%;
+	height: 90%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.modal_div_content {
+	height: 90%;
+	text-align: center;
+}
+
+.modal_title {
+	background-color: rgba(0, 0, 0, 1);
+	border: 1px solid black;
+	font-size: 1.5em;
+	color: white;
+	padding: 10px;
+	margin-bottom: 0;
+}
+
+.modal_content {
+	background-color: rgba(0, 0, 0, 1);
+	border: 1px solid black;
+	padding: 10px;
+	color: white;
+}

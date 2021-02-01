@@ -1,0 +1,64 @@
+@font-face {
+	font-family: "LAB디지털";
+	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff")
+		format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+body,
+nav {
+	background-color: darkblue;
+	color: white;
+	font-family: "LAB디지털";
+}
+
+section {
+	border-top: 3px dashed white;
+	width: 100%;
+	height: calc(100% - 10vh);
+	text-align: center;
+}
+
+.memberList {
+	position: relative;
+	/* top: 50%; */
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 700px;
+
+	color: white;
+	font-size: 1.3em;
+}
+
+#memberListTable {
+	/* border: 1px dashed white; */
+	padding: 10px;
+	border-collapse: collapse;
+	width: 100%;
+	top: 50%;
+	position: absolute;
+	transform: translateY(100%);
+}
+
+section h1 {
+	font-size: 3rem;
+}
+
+#logout {
+	width: 100px;
+	background-color: darkblue;
+	font-family: "LAB디지털";
+	border: none;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	margin: 4px;
+	cursor: pointer;
+}
+
+.isMe {
+	background-color: cadetblue;
+}

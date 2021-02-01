@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/travel.css" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<script src="../js/jquery-3.5.1.js"></script>
+		<title>여행 | leewonbin</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="topnav-start-div">
+					<div
+						class="topnav-content-div start"
+						onclick="location.href='../html/index.html'"
+					>
+						<span>HOME</span>
+					</div>
+				</div>
+				<div class="nav-link">
+					<div
+						class="topnav-content-div"
+						onclick="location.href='../html/about.html'"
+					>
+						<span>자기소개</span>
+					</div>
+					<div
+						class="topnav-content-div"
+						onclick="location.href='../html/travel.html'"
+					>
+						<span>여행</span>
+					</div>
+					<div
+						class="topnav-content-div"
+						onclick="location.href='../html/roadmap.html'"
+					>
+						<span>로드맵</span>
+					</div>
+					<div
+						class="topnav-content-div"
+						onclick="location.href='../html/signup.html'"
+					>
+						<span>회원가입</span>
+					</div>
+					<div
+						class="topnav-content-div"
+						onclick="location.href='../html/memberList.html'"
+					>
+						<span>회원목록</span>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<section>
+			<div class="main">
+				<div class="tabs">
+					<div class="tab" id="tab1_title">
+						<p>한국</p>
+					</div>
+					<div class="tab" id="tab2_title">
+						<p>일본</p>
+					</div>
+				</div>
+				<div class="content">
+					<div id="tab1" class="tab_content active">
+						<div class="image-gallery">
+							<div
+								onclick="showModal(this, '집에서, 너무 일찍 일어난 어느 아침', '아직 수업 시작하려면 많이 남았는데....');"
+								class="img-k1"
+							></div>
+							<div
+								onclick="showModal(this, '방에서, 집콕시대의 해돋이 즐기기', '수업 빨리 시작해서 빨리 끝나면 안되나요..?');"
+								class="img-k2"
+							></div>
+							<div
+								onclick="showModal(this,'제주도', '두번 오르면 죽을듯..');"
+								class="img-k3"
+							></div>
+							<div
+								onclick="showModal(this,'강원도','새벽같이 일어나서');"
+								class="img-k4"
+							></div>
+							<div
+								onclick="showModal(this,'망원동','원하고 망원하죠');"
+								class="img-k5"
+							></div>
+							<div
+								onclick="showModal(this,'뒷산', '단풍놀이');"
+								class="img-k6"
+							></div>
+							<div
+								onclick="showModal(this,'뒷산','붉은노을');"
+								class="img-k7"
+							></div>
+						</div>
+					</div>
+					<div id="tab2" class="tab_content">
+						<div class="image-gallery">
+							<div
+								onclick="showModal(this,'교토','단풍놀이');"
+								class="img-j1"
+							></div>
+							<div
+								onclick="showModal(this,'교토','단풍놀이 즐기는 두 사람');"
+								class="img-j2"
+							></div>
+							<div
+								onclick="showModal(this,'아라시야마','식당뷰');"
+								class="img-j3"
+							></div>
+							<div
+								onclick="showModal(this,'청수사','이름 모를 탑');"
+								class="img-j4"
+							></div>
+							<div
+								onclick="showModal(this,'북해도','눈, 나무, 눈');"
+								class="img-j5"
+							></div>
+							<div
+								onclick="showModal(this,'북해도','폭포');"
+								class="img-j6"
+							></div>
+							<div
+								onclick="showModal(this,'삿포로','스스키노');"
+								class="img-j7"
+							></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal_background">
+				<div class="modal_div-pic">
+					<div class="modal_div_picture"></div>
+					<div class="modal_div_content">
+						<div class="modal_title">제목</div>
+						<div class="modal_content">내용</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script src="../js/travel.js"></script>
+	</body>
+</html>

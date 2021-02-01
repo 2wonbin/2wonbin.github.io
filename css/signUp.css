@@ -1,0 +1,40 @@
+section {
+	width: 100%;
+	height: 100%;
+	height: calc(100% - 10vh);
+}
+
+.register {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+}
+
+form {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.login-form {
+	height: 100px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+}
+.button {
+	width: 100px;
+	height: 40px;
+	background-color: skyblue;
+	border: none;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	margin: 4px;
+	cursor: pointer;
+}
